@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application version="7" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd">
+  <display-name>Drivers Claim App</display-name>
+  <module>
+    <web>
+      <web-uri>Drivers_Claim_App-war.war</web-uri>
+      <!-- Used to set the main url for website -->
+      <context-root>/DriversClaimApp</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>Drivers_Claim_App-ejb.jar</ejb>
+  </module>
+</application>

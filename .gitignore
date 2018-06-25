@@ -21,3 +21,17 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/Drivers Claim App/nbproject/private/
+/Drivers Claim App/Drivers Claim App-war/nbproject/private/
+/Drivers Claim App/Drivers Claim App-ejb/nbproject/private/
+/Drivers Claim App/dist/
+/Drivers Claim App/build/
+/Drivers Claim App/Drivers Claim App-war/build/
+/Drivers Claim App/Drivers Claim App-war/dist/
+/Drivers Claim App/Drivers Claim App-ejb/dist/
+/Drivers Claim App/Drivers Claim App-ejb/build/
+/BeanLibraries/UserOpsBean/nbproject/private/
+/BeanLibraries/DBLibrary/nbproject/private/
+/BeanLibraries/DBLibrary/dist/
+/BeanLibraries/DBLibrary/build/
+/BeanLibraries/UserOpsBean/dist/
