@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-Jul-2018 13:16:42 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ORM_DB.Payments" table="payments" catalog="dca" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="memId" type="string">
+            <column name="mem_id" length="20" not-null="true" />
+        </property>
+        <property name="typeOfPayment" type="string">
+            <column name="type_of_payment" length="10" not-null="true" />
+        </property>
+        <property name="amount" type="float">
+            <column name="amount" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="10" not-null="true" />
+        </property>
+        <property name="time" type="time">
+            <column name="time" length="8" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
