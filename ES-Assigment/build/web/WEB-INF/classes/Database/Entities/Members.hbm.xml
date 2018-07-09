@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 10, 2018 2:34:36 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="DCA" name="Database.Entities.Members" optimistic-lock="version" table="members">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="name" type="string">
+      <column length="40" name="name"/>
+    </property>
+    <property name="address" type="string">
+      <column length="16777215" name="address"/>
+    </property>
+    <property name="dob" type="date">
+      <column length="10" name="dob"/>
+    </property>
+    <property name="dor" type="date">
+      <column length="10" name="dor"/>
+    </property>
+    <property name="balance" type="float">
+      <column name="balance" not-null="true" precision="12" scale="0"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="userses" table="users">
+      <key>
+        <column name="members_id" not-null="true"/>
+      </key>
+      <one-to-many class="Database.Entities.Users"/>
+    </set>
+  </class>
+</hibernate-mapping>

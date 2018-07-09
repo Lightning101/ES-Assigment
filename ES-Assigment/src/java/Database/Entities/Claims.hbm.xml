@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 10, 2018 2:34:36 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="DCA" name="Database.Entities.Claims" optimistic-lock="version" table="claims">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="memId" type="string">
+      <column length="20" name="mem_id" not-null="true"/>
+    </property>
+    <property name="date" type="date">
+      <column length="10" name="date" not-null="true"/>
+    </property>
+    <property name="rationale" type="string">
+      <column length="16777215" name="rationale" not-null="true"/>
+    </property>
+    <property name="status" type="string">
+      <column length="10" name="status" not-null="true"/>
+    </property>
+    <property name="amount" type="float">
+      <column name="amount" not-null="true" precision="12" scale="0"/>
+    </property>
+  </class>
+</hibernate-mapping>
